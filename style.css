@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(./fond.JPG);
+    background: url(./assets/fond.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: -760px;
