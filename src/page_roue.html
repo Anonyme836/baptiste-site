@@ -10,8 +10,51 @@
     <section class="destinations">
         <h1><u>Nos top roues</u></h1>
         <a href="acueil.html" class="retour">Retour</a>
-        <div class="gallerie">
-            <div class="image">
+        <div class="gallerie" id="listroue"> </div>
+        <script>
+var roues = {"roues":[
+    {
+        "Brand":"Bones",
+        "lastName":"Roues semie molle 54mm",
+        "Price":"35.90",
+        "image":"Roues1.jpg"
+    },
+    {
+        "Brand":"Bones",
+        "lastName":"Roue semie molle 40mm",
+        "Price":"40.50",
+        "image":"roue2.jpg"
+    }
+]
+
+}
+
+roues.roues.forEach(roue => {
+    document.getElementById("listroue").innerHTML+=
+"<div class='image'>"+
+    "<img src='../assets/"+roue.image+"' alt=''>"+
+        "<div class='description'> "+
+             "<h2>"+roue.Brand+"</h2>"+
+             "<p>"+roue.lastName+"<br/>"+roue.Price+"$ </p>"+
+    "</div>"+
+ "</div>";
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="image">
                 <img src="../assets/Roues1.jpg" alt="">
                 <div class="description"> 
                     <h1>Bones</h1>
@@ -68,8 +111,7 @@
                 </div>
             </div>
         </div>
-        </div> 
+        </div>  -->
     </section>
-
 </body>
 </html>

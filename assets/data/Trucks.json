@@ -1,0 +1,35 @@
+{"Trucks":[
+    {
+        "Brand":"Venture",
+        "lastName":"Parfait pour tout types de pratiques",
+        "Price":"45.50",
+        "image":"Venturepolished.jpg"
+
+
+    },
+    {
+        "Brand":"Independante",
+        "lastName":"Trucks independante pour le steet",
+        "Price":"35.90",
+        "image":"independante_trucks.jpg"
+    },
+    {
+        "Brand":"Ace",
+        "lastName":"Trucks ace parfait pour le boawl",
+        "Price":"40",
+        "image":"ace-trucks-af1-limited-hollow-deedz-55-trucks-de-skateboardace-trucks.jpg"
+    },
+    {
+        "Brand":"Thunder",
+        "lastName":"Trucks thunder",
+        "Price":"32.50",
+        "image":"thunder.jpg"        
+    },
+    {
+        "Brand":"Independante",
+        "lastName":"Independent Stage 11 Truck Raw Silver",
+        "Price":"35.00",
+        "image":"ligne_deux_trucks2.webp"          
+    }
+]
+}

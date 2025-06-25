@@ -1,0 +1,21 @@
+{"skates":[
+    {
+        "Brand":"Jart",
+        "lastName":"Board 8.25",
+        "Price":"60.90",
+        "image":"planche1.jpg",
+        "description1":"🛹 Contexte de la marque Jart \\nFondée en 2001–2002 par les frères Iraola dans le Pays Basque espagnol, Jart est aujourd’hui l’un des plus grands fabricants de decks en Europe\\nL’entreprise utilise du bouleau d’érable américain issu de forêts durablement gérées, collé avec des résines écologiques, et recycle tous ses déchets dans son usine\\nL'illustration inspirée des schémas de Darwin, mais avec une dénonciation de la dérive répressive : l’évolution humaine semble culminer sur une autorité policière armée.\\nLe jeu de mots “Involution” (au lieu d’“évolution”) souligne un retour en arrière plutôt qu’un progrès.",
+        "Name":"The Human Involution"    
+    },
+    {
+        "Brand":"Baker",
+        "lastName":"Board 8.50",
+        "Price":"80.90",
+        "image":"planche2.jpg",
+        "description2":"🛹 Modèle présenté : Baker OG Logo Deck Design emblématique avec le logo BAKER en lettres blanches majuscules, chacune placée dans un carré noir incliné, sur fond rouge vif.Ce style est directement inspiré des magazines DIY et de   l’esthétique punk / collage.C’est un design classique de la marque, resté presque inchangé depuis les débuts de Baker À propos de Baker Skateboards :Fondée en 2000 par le skateur Andrew Reynolds (surnommé The Boss).\\nOriginaire de Californie, Baker est connue pour son style raw, brut et très street.\\nLa marque fait partie du collectif Baker Boys Distribution (avec Deathwish, Heroin, Shake Junt…).\\nPourquoi cette board est culte ?\\nLogo culte : Identifiable instantanément dans les skateparks, clips, et vidéos.\\nSoutien des pros : Baker a accueilli des légendes comme Reynolds, Dustin Dollin, Figgy, Kevin Spanky Long, Riley Hawk, etc.\\nVidéos mythiques : Baker 3, Bake & Destroy, This Is Skateboarding (via Emerica), etc.\\nEsprit : Culture DIY, rébellion, débauche, potes qui sk8ent… c’est plus qu’une marque, c’est une attitude.",
+        "Name":"Baker Red"
+    }
+]
+
+}
+

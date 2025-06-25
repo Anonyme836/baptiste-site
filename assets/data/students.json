@@ -1,0 +1,23 @@
+{"students":[
+        {
+            "firstName":"chanaka",
+            "lastName": "gunasekara", 
+            "age":23
+        },
+        {
+            "firstName":"kamal",
+            "lastName":"abekoon",
+            "age":23
+        },
+         {
+            "firstName":"kamal",
+            "lastName":"abekoon",
+            "age":23
+        },
+         {
+            "firstName":"kamal",
+            "lastName":"abekoon",
+            "age":23
+        }
+    ]
+}

@@ -10,8 +10,37 @@
     <section class="destinations">
         <h1><u>Nos vêtements</u></h1>
         <a href="acueil.html" class="retour">Retour</a>
-        <div class="gallerie">
-            <div class="image">
+        <div class="gallerie" id="listhabit"> </div>
+        <script>
+
+var habits = {"habits":[
+    {
+        "Brand":"DC-Shoes CRISIS-2",
+        "lastName":"Cemelle skate, et très robuste",
+        "Price":"75.90",
+        "image":"chaussure_dc.jpg"
+    },
+    {
+        "Brand":"Baggy",
+        "lastName":"Baggy style skate",
+        "Price":"40",
+        "image":"jean_skate.webp"
+    }
+]
+}
+
+habits.habits.forEach(habit => {
+    document.getElementById("listhabit").innerHTML+=
+"<div class='image'>"+
+    "<img src='../assets/"+habit.image+"' alt=''>"+
+        "<div class='description'> "+
+             "<h2>"+habit.Brand+"</h2>"+
+             "<p>"+habit.lastName+"<br/>"+habit.Price+"$ </p>"+
+    "</div>"+
+ "</div>";
+});
+</script>
+            <!-- <div class="image">
                 <img src="../assets/chaussure_dc.jpg" alt="">
                 <div class="description"> 
                     <h1>DC-Shoes CRISIS-2</h1>
@@ -66,8 +95,8 @@
                     <h1>Independent</h1>
                     <p>Ceinture Independent<br>26$</p>
                 </div>
-            </div>
-        </div>
-        </div>
-        </div> 
+            </div> -->
+       
     </section>
+</body>
+</html>

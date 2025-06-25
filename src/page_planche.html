@@ -7,18 +7,59 @@
     <link rel="stylesheet" href="../css/page_planche.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Bungee+Spice&family=DM+Serif+Display:ital@0;1&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Bungee+Spice&family=DM+Serif+Display:ital@0;1&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+
 </head>
 <body>
     <section class="destinations">
         <h1><U>Notre top planches</U></h1>
         <a href="acueil.html" class="retour">Retour</a>
-        <div class="gallerie">
-            <div class="image">
+        <div class="gallerie" id="listplanche"></div>
+<script>
+var planches = {"skates":[
+    {
+        "Brand":"Jart",
+        "lastName":"Board 8.25",
+        "Price":"60.90",
+        "image":"planche1.jpg",
+        "description":"🛹 Contexte de la marque Jart <BR>Fondée en 2001–2002 par les frères Iraola dans le Pays Basque espagnol, Jart est aujourd’hui l’un des plus grands fabricants de decks en Europe\\nL’entreprise utilise du bouleau d’érable américain issu de forêts durablement gérées, collé avec des résines écologiques, et recycle tous ses déchets dans son usine\\nL'illustration inspirée des schémas de Darwin, mais avec une dénonciation de la dérive répressive : l’évolution humaine semble culminer sur une autorité policière armée.\\nLe jeu de mots “Involution” (au lieu d’“évolution”) souligne un retour en arrière plutôt qu’un progrès.",
+        "Name":"The Human Involution"    
+    },
+    {
+        "Brand":"Baker",
+        "lastName":"Board 8.50",
+        "Price":"80.90",
+        "image":"planche2.jpg",
+        "description":"🛹 Modèle présenté : Baker OG Logo Deck Design emblématique avec le logo BAKER en lettres blanches majuscules, chacune placée dans un carré noir incliné, sur fond rouge vif.Ce style est directement inspiré des magazines DIY et de   l’esthétique punk / collage.C’est un design classique de la marque, resté presque inchangé depuis les débuts de Baker À propos de Baker Skateboards :Fondée en 2000 par le skateur Andrew Reynolds (surnommé The Boss).\\nOriginaire de Californie, Baker est connue pour son style raw, brut et très street.\\nLa marque fait partie du collectif Baker Boys Distribution (avec Deathwish, Heroin, Shake Junt…).\\nPourquoi cette board est culte ?\\nLogo culte : Identifiable instantanément dans les skateparks, clips, et vidéos.\\nSoutien des pros : Baker a accueilli des légendes comme Reynolds, Dustin Dollin, Figgy, Kevin Spanky Long, Riley Hawk, etc.\\nVidéos mythiques : Baker 3, Bake & Destroy, This Is Skateboarding (via Emerica), etc.\\nEsprit : Culture DIY, rébellion, débauche, potes qui sk8ent… c’est plus qu’une marque, c’est une attitude.",
+        "Name":"Baker Red"
+    }
+]
+}
+
+planches.skates.forEach(planche => {
+    document.getElementById("listplanche").innerHTML+=
+"<div class='image'>"+
+    "<img src='../assets/"+planche.image+"' alt=''>"+
+        "<div class='description'> "+
+             "<h2><button class='openModalBtn' data-title='"+planche.Brand+"' data-description='"+planche.description+"'>"+planche.Brand+"</button></h2>"+
+             "<p>"+planche.lastName+"<br/>"+planche.Price+"$ </p>"+
+    "</div>"+
+ "</div>";
+    
+});
+
+</script>
+            <!-- <div class="image">
                 <img src="../assets/planche1.jpg" alt="#">
-                <div class="description"> 
-                    <h2><a href="./page_planche1.html" class="Description">Jart</a></h2>
-                    <p>Board 8.25<br/>60.90$</p>
+                <div class="description">  -->
+    <!-- <h2>
+        <button class="openModalBtn"
+            data-title="Jart D"
+            data-description="Le Produit Jart est le plus récent et le plus performant.">
+            Jart
+        </button>
+    </h2> -->
+                    <!-- <p>Board 8.25<br/>60.90$</p>
                 </div>
             </div>
             <div class="image">
@@ -99,9 +140,47 @@
                 </div>
             </div>
         </div>
-        </div>
-    </section>
-   
+        </div> -->
+    <!-- </section> -->
+
+    <!-- Modal HTML -->
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal">
+      <span class="close-btn" id="closeModalBtn">&times;</span>
+      <h3 id="modalTitle">Titre</h3>
+      <p id="modalDescription">Description</p>
+    </div>
+  </div>
+ <!-- END Modal HTML -->
+
+  <script>
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const closeBtn = document.getElementById('closeModalBtn');
+    const openBtns = document.querySelectorAll('.openModalBtn');
+
+    openBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const title = btn.getAttribute('data-title');
+        const description = btn.getAttribute('data-description');
+
+        modalTitle.textContent = title;
+        modalDescription.innerHTML = description;
+        modalOverlay.classList.add('active');
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modalOverlay.classList.remove('active');
+    });
+
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) {
+        modalOverlay.classList.remove('active');
+      }
+    });
+  </script>
 </body>
 </html>
 

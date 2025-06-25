@@ -10,25 +10,61 @@
 <body>
   <section>
     <h1>Connexion</h1>
-    <div class="input-box">
-      <input type="email" placeholder="Adresse mail">
-      <i class="fa-solid fa-user"></i>
-    </div>
-    <div class="input-box">
-      <input type="password" placeholder="Mot de passe">
-      <i class="fa-solid fa-lock"></i>
-    </div>
-    <div class="remenber-forgot">
-      <label><input type="checkbox">Se souvenir de moi</label>
-      <a href="">Mot de passe oublié ?</a>
-    </div>
-      <button class="login-btn"><a href="./src/acueil.html">Se connecter</a></button>
+      <div id="error-msg" class="error">Identifiants incorrects.</div>
+    <form id="login-form">
+     
+        <div class="input-box">
+          <input type="email" id="username" placeholder="Adresse mail">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="input-box">
+          <input type="password" id="password" placeholder="Mot de passe">
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <div class="remenber-forgot">
+          <label><input type="checkbox">Se souvenir de moi</label>
+          <a href="">Mot de passe oublié ?</a>
+        </div>
+        <button class="login-btn" type="submit">Se connecter</button>
+    </form>
+
       <div class="register-link">
         <p>Pas de compte ? <a href="#">Inscription</a></p>
       </div>
 
 
   </section>
+
+  <script>
+    // Liste des utilisateurs valides
+    const users = [
+      { username: 'bapt162510@gmail.com', password: '162510'},
+      { username: 'bob', password: 'bob456'},
+      // Ajoutez autant d'utilisateurs que nécessaire
+    ];
+
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+      e.preventDefault(); // Empêche le rechargement de la page
+
+      const inputUser = document.getElementById('username').value.trim();
+      const inputPass = document.getElementById('password').value;
+
+      // Recherche d'un utilisateur correspondant
+      const matched = users.find(u =>
+        u.username === inputUser && u.password === inputPass
+      );
+
+      if (matched) {
+        // Cache le message d'erreur s'il était affiché
+        document.getElementById('error-msg').style.display = 'none'
+        // Redirection
+        window.location.href = './src/acueil.html';
+      } else {
+        // Affiche un message d'erreur
+        document.getElementById('error-msg').style.display = 'block';
+      }
+    });
+  </script>
 </body>
 </html>
             
