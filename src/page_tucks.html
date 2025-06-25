@@ -14,138 +14,73 @@
                     <li><a href="Visserie.html" class="Visserie">Visserie</a></li>
                 </ul>
                 <div class="gallerie" id="listtrucks"></div>
-<script>
+        <script>
+                var trucks= {"trucks":[
+                    {
+                        "Brand":"Venture",
+                        "lastName":"Parfait pour tout types de pratiques",
+                        "Price":"45.50",
+                        "image":"Venturepolished.jpg"
 
-// var trucks= {"trucks":[
-//     {
-//         "Brand":"Venture",
-//         "lastName":"Parfait pour tout types de pratiques",
-//         "Price":"45.50",
-//         "image":"Venturepolished.jpg"
+                    },
+                    {
+                        "Brand":"Independante",
+                        "lastName":"Trucks independante pour le steet",
+                        "Price":"35.90",
+                        "image":"independante_trucks.jpg"
+                    },
+                    {
+                        "Brand":"Ace",
+                        "lastName":"Trucks ace parfait pour le boawl",
+                        "Price":"40",
+                        "image":"ace-trucks-af1-limited-hollow-deedz-55-trucks-de-skateboardace-trucks.jpg"
+                    },
+                    {
+                        "Brand":"Thunder",
+                        "lastName":"Trucks thunder",
+                        "Price":"32.50",
+                        "image":"thunder.jpg"        
+                    },
+                    {
+                        "Brand":"Independante",
+                        "lastName":"Independent Stage 11 Truck Raw Silver",
+                        "Price":"35.00",
+                        "image":"ligne_deux_trucks2.webp"          
+                    },
+                    {
+                        "Brand":"Independante",
+                        "lastName":"Independent Silver",
+                        "Price":"37.00",
+                        "image":"ligne_deux_trucks2.webp" 
+                    },
+                    {
+                        "Brand":"Independante",
+                        "lastName":"Independent Trucks WHITE-OUT",
+                        "Price":"37.00",
+                        "image":"ligne_deux_trucks3.jpg"    
+                    },
+                    {
+                        "Brand":"Independante",
+                        "lastName":"Independent Trucks Mid Primitive Gold",
+                        "Price":"91,99",
+                        "image":"ligne_deux_trucks4.jpg"    
+                    }
 
+                ]
+                }
 
-//     },
-//     {
-//         "Brand":"Independante",
-//         "lastName":"Trucks independante pour le steet",
-//         "Price":"35.90",
-//         "image":"independante_trucks.jpg"
-//     }
-// ]
-// }
-var trucks= {"trucks":[
-    {
-        "Brand":"Venture",
-        "lastName":"Parfait pour tout types de pratiques",
-        "Price":"45.50",
-        "image":"Venturepolished.jpg"
-
-    },
-    {
-        "Brand":"Independante",
-        "lastName":"Trucks independante pour le steet",
-        "Price":"35.90",
-        "image":"independante_trucks.jpg"
-    },
-    {
-        "Brand":"Ace",
-        "lastName":"Trucks ace parfait pour le boawl",
-        "Price":"40",
-        "image":"ace-trucks-af1-limited-hollow-deedz-55-trucks-de-skateboardace-trucks.jpg"
-    },
-    {
-        "Brand":"Thunder",
-        "lastName":"Trucks thunder",
-        "Price":"32.50",
-        "image":"thunder.jpg"        
-    },
-    {
-        "Brand":"Independante",
-        "lastName":"Independent Stage 11 Truck Raw Silver",
-        "Price":"35.00",
-        "image":"ligne_deux_trucks2.webp"          
-    }
-]
-}
-
-trucks.trucks.forEach(truck => {
-    document.getElementById("listtrucks").innerHTML+=
-"<div class='image'>"+
-    "<img src='../assets/"+truck.image+"' alt=''>"+
-        "<div class='description'> "+
-             "<h2>"+truck.Brand+"</h2>"+
-             "<p>"+truck.lastName+"<br/>"+truck.Price+"$ </p>"+
-    "</div>"+
- "</div>";
-});
-
-
-</script>
+                trucks.trucks.forEach(truck => {
+                    document.getElementById("listtrucks").innerHTML+=
+                "<div class='image'>"+
+                    "<img src='../assets/"+truck.image+"' alt=''>"+
+                        "<div class='description'> "+
+                            "<h2>"+truck.Brand+"</h2>"+
+                            "<p>"+truck.lastName+"<br/>"+truck.Price+"$ </p>"+
+                    "</div>"+
+                "</div>";
+                });
 
 
-
-
-
-
-
-
-                    <!-- <div class="image">
-                        <img src="../assets/Venturepolished.jpg" alt="">
-                        <div class="description"> 
-                            <h1>Venture</h1>
-                            <p>Parfait pour tout types de pratiques<br>45.50$</p>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src="../assets/independante_trucks.jpg" alt="">
-                        <div class="description">
-                            <h1>Independante</h1>
-                            <p>Trucks independante pour le steet<br>35.90$</p>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src="../assets/ace-trucks-af1-limited-hollow-deedz-55-trucks-de-skateboardace-trucks.jpg" alt="">
-                        <div class="description">
-                            <h1>Ace</h1>
-                            <p>Trucks ace parfait pour le boawl<br>40$</p>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src="../assets/thunder.jpg" alt="">
-                        <div class="description">
-                            <h1>Thunder</h1>
-                            <p>Trucks thunder<br>32.50$</p>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src="../assets/ligne_deux_trucks.jpg" alt="">
-                        <div class="description"> 
-                            <h1>Independante</h1>
-                            <p>Independent Stage 11 forgés Noir<br>88,00 $</p>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src="../assets/ligne_deux_trucks2.webp" alt="">
-                        <div class="description">
-                            <h1>Independante</h1>
-                            <p>Independent Stage 11 Truck Raw Silver<br>35.00$</p>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src="../assets/ligne_deux_trucks3.jpg" alt="">
-                        <div class="description">
-                            <h1>Independante</h1>
-                            <p>Independent Trucks WHITE-OUT<br>80.99$</p>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src="../assets/ligne_deux_trucks4.jpg" alt="">
-                        <div class="description">
-                            <h1>Independante</h1>
-                            <p>Independent Trucks Mid Primitive Gold<br>91,99 $</p>
-                        </div>
-                    </div> -->
-                
-            </section>
+        </script>
     </body>
 </html>

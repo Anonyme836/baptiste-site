@@ -6,112 +6,74 @@
     <title>Roues</title>
     <link rel="stylesheet" href="../css/page_roue.css">
 </head>
-<body>
-    <section class="destinations">
-        <h1><u>Nos top roues</u></h1>
-        <a href="acueil.html" class="retour">Retour</a>
-        <div class="gallerie" id="listroue"> </div>
-        <script>
-var roues = {"roues":[
-    {
-        "Brand":"Bones",
-        "lastName":"Roues semie molle 54mm",
-        "Price":"35.90",
-        "image":"Roues1.jpg"
-    },
-    {
-        "Brand":"Bones",
-        "lastName":"Roue semie molle 40mm",
-        "Price":"40.50",
-        "image":"roue2.jpg"
-    }
-]
+    <body>
+        <section class="destinations">
+            <h1><u>Nos top roues</u></h1>
+            <a href="acueil.html" class="retour">Retour</a>
+            <div class="gallerie" id="listroue"> </div>
+            <script>
+                var roues = {"roues":[
+                    {
+                        "Brand":"Bones",
+                        "lastName":"Roues semie molle 54mm",
+                        "Price":"35.90",
+                        "image":"Roues1.jpg"
+                    },
+                    {
+                        "Brand":"Bones",
+                        "lastName":"Roue semie molle 40mm",
+                        "Price":"40.50",
+                        "image":"roue2.jpg"
+                    },
+                    {
+                        "Brand":"Dragone",
+                        "lastName":"Roue dure 54mm",
+                        "Price":"35.95",
+                        "image":"roue3.jpg"
+                    },
+                    {
+                        "Brand":"Spitfire",
+                        "lastName":"Roue dure 54mm*34mm",
+                        "Price":"38",
+                        "image":"roue4.jpg"
+                    },
+                    {
+                        "Brand":"Bones",
+                        "lastName":"Roues semie molle 54mm",
+                        "Price":"30.90",
+                        "image":"roue_ligne_deux.webp"
+                    },
+                    {
+                        "Brand":"Dragon",
+                        "lastName":"Roue semie molle 40mm",
+                        "Price":"32.50",
+                        "image":"roue_ligne_deux2.webp"
+                    },
+                    {   "Brand":"Bones",
+                        "lastName":"Roue dure 54mm",
+                        "Price":"25.95",
+                        "image":"roue_ligne_deux3.webp"
+                    },
+                    {  "Brand":"Spitfire",
+                        "lastName":"Roue dure 54mm*34mm",
+                        "Price":"32.90",
+                        "image":"roue_ligne_deux4.webp"
+                    },
+                ]
+                }
 
-}
-
-roues.roues.forEach(roue => {
-    document.getElementById("listroue").innerHTML+=
-"<div class='image'>"+
-    "<img src='../assets/"+roue.image+"' alt=''>"+
-        "<div class='description'> "+
-             "<h2>"+roue.Brand+"</h2>"+
-             "<p>"+roue.lastName+"<br/>"+roue.Price+"$ </p>"+
-    "</div>"+
- "</div>";
-});
+                roues.roues.forEach(roue => {
+                    document.getElementById("listroue").innerHTML+=
+                "<div class='image'>"+
+                    "<img src='../assets/"+roue.image+"' alt=''>"+
+                        "<div class='description'> "+
+                            "<h2>"+roue.Brand+"</h2>"+
+                            "<p>"+roue.lastName+"<br/>"+roue.Price+"$ </p>"+
+                    "</div>"+
+                "</div>";
+                });
 
 
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- <div class="image">
-                <img src="../assets/Roues1.jpg" alt="">
-                <div class="description"> 
-                    <h1>Bones</h1>
-                    <p>Roues semie molle 54mm<br/>35.90$</p>
-                </div>
-            </div>
-            <div class="image">
-                <img src="../assets/roue2.jpg" alt="">
-                <div class="description">
-                    <h1>Bones</h1>
-                    <p>Roue semie molle 40mm<br/>40.50$</p>
-                </div>
-            </div>
-            <div class="image">
-                <img src="../assets/roue3.jpg" alt="">
-                <div class="description">
-                    <h1>Dragon</h1>
-                    <p>Roue dure 54mm<br/>35.95$</p>
-                </div>
-            </div>
-            <div class="image">
-                <img src="../assets/roue4.jpg" alt="">
-                <div class="description">
-                    <h1>Spitfire</h1>
-                    <p>Roue dure 54mm*34mm<br>38$</p>
-                </div>
-            </div>
-                <div class="image">
-                <img src="../assets/roue_ligne_deux.webp" alt="">
-                <div class="description"> 
-                    <h1>Bones</h1>
-                    <p>Roues semie molle 54mm<br/>30.90$</p>
-                </div>
-            </div>
-            <div class="image">
-                <img src="../assets/roue_ligne_deux2.webp" alt="">
-                <div class="description">
-                    <h1>Dragon</h1>
-                    <p>Roue semie molle 40mm<br/>32.50$</p>
-                </div>
-            </div>
-            <div class="image">
-                <img src="../assets/roue_ligne_deux3.webp" alt="">
-                <div class="description">
-                    <h1>Bones</h1>
-                    <p>Roue dure 54mm<br/>25.95$</p>
-                </div>
-            </div>
-            <div class="image">
-                <img src="../assets/roue_ligne_deux4.webp" alt="">
-                <div class="description">
-                    <h1>Spitfire</h1>
-                    <p>Roue dure 54mm*34mm<br>32.90$</p>
-                </div>
-            </div>
-        </div>
-        </div>  -->
-    </section>
-</body>
+            </script>
+    </body>
 </html>

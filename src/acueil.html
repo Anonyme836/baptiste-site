@@ -28,9 +28,24 @@
         <button class="btn">
             <!-- on a importe l'icone depuis le site vu en haut -->
             <i class="fa-solid fa-phone"></i>
-            <span>Appeler</span>
+            <span class="openModalBtn"    
+            data-title="Nous contacter"
+            data-description="Mail: bapt162510@sk8.com">Contacter</span> 
         </button>
     </div>
+<div id="modalOverlay" class="modal-overlay">
+    <div class="modal">
+      <span class="close-btn" id="closeModalBtn">&times;</span>
+      <div id="modalTitle" class="modatitle">Titre</div>
+      <br>
+      <p id="modalDescription" class="modalDescription">Description</p>
+      <br>
+      <p id="modalDescription"class="modalDescription">Tel: 0675454325</p>
+      <br>
+      <p id="modalDescription"class="modalDescription">Adresse: 26 cours Gambetta <br>34000 Montpellier France</p>
+    </div>
+</div>
+
 </header>
 <section class="home-section">
     <div class="left">
@@ -44,6 +59,40 @@
                  <p>Découvrez des planches sur mesure conçus pour vous. Notre équipe d'experts est prête à transformer vos rêves en réalité avec des options personnalisées et un service irréprochable.</p>
         </div>
         <a href="../index.html" class="Connection">Se connecter</a>
+
+
+  
+<script>
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const closeBtn = document.getElementById('closeModalBtn');
+    const openBtns = document.querySelectorAll('.openModalBtn');
+
+    openBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const title = btn.getAttribute('data-title');
+        const description = btn.getAttribute('data-description');
+
+        modalTitle.innerHTML = title;
+        modalDescription.innerHTML = description;
+        modalOverlay.classList.add('active');
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modalOverlay.classList.remove('active');
+    });
+
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) {
+        modalOverlay.classList.remove('active');
+      }
+    });
+  </script>
+
+
+
 
 </body>
 

@@ -51,7 +51,7 @@ section {
 
 
 .destinations .gallerie .image img {
-    object-fit: cover;
+    object-fit: contain;
     height: 92%;
     width: 98%;
     border-radius: 1rem;
@@ -133,7 +133,7 @@ section {
 }
 
 .modal {
-    background: white;
+    background-color: #10214b;
     padding: 20px;
     border-radius: 8px;
     max-width: 500px;
@@ -146,7 +146,7 @@ section {
     top: 10px;
     right: 15px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 28px;
 }
 
 .modal-overlay.active {
@@ -154,12 +154,33 @@ section {
 }
 
 button {
+    background-color: #f69a38;
+    font-weight: 550;
     padding: 10px 15px;
     margin: 10px;
-    font-size: 16px;
+    font-size: 18px;
+    border-radius: 20px;  
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: black;
  }
 
+ button:hover {
+    transition: 0.7s;
+    padding: 14px 17px;
+    margin: 10px;
+    font-size: 21px;
+ }
 
+p {
+    color: #d7bd88;
+}
 
+h3 {
+    font-size: 25px;
+    color: black;
+}
 
-
+::selection {
+    background-color: gray;
+}
