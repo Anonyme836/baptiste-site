@@ -170,7 +170,7 @@ ul li a:hover {
 
 .Connection {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 23px;
+    font-size: 1.5rem;
     color: white;
     text-decoration: none;
     margin-top: 43%;
@@ -181,7 +181,7 @@ ul li a:hover {
     transition: 0.5s;
     color: #fff;
     border-radius: 20px;
-    font-size: 24.5px;
+    font-size: 1.6rem;
 }
 
 

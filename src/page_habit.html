@@ -25,6 +25,42 @@ var habits = {"habits":[
         "lastName":"Baggy style skate",
         "Price":"40",
         "image":"jean_skate.webp"
+    },
+    {
+        "Brand":"Titus",
+        "lastName":"Bonnet Homme",
+        "Price":"",
+        "image":"bonnet_skate.jpg"
+    },
+    {
+        "Brand":"Vans",
+        "lastName":"Chaussettes Vans",
+        "Price":"15",
+        "image":"chaussettes_vans.jpg"
+    },
+    {
+        "Brand":"Magenta",
+        "lastName":"T-shirt Magenta",
+        "Price":"15",
+        "image":"t-shirt_skate.webp"
+    },
+    {
+        "Brand":"Thrasher",
+        "lastName":"Pull Thrasher",
+        "Price":"45",
+        "image":"pull.jpg"
+    },
+    {
+        "Brand":"Carart",
+        "lastName":"Short Carart",
+        "Price":"35",
+        "image":"short.jpg"
+    },
+        {
+        "Brand":"Independent",
+        "lastName":"Ceinture Independent",
+        "Price":"26",
+        "image":"ceinture.jpg"
     }
 ]
 }
@@ -32,7 +68,7 @@ var habits = {"habits":[
 habits.habits.forEach(habit => {
     document.getElementById("listhabit").innerHTML+=
 "<div class='image'>"+
-    "<img src='../assets/"+habit.image+"' alt=''>"+
+    "<img src='../assets/Habit/"+habit.image+"' alt='👨🏼‍💻'>"+
         "<div class='description'> "+
              "<h2>"+habit.Brand+"</h2>"+
              "<p>"+habit.lastName+"<br/>"+habit.Price+"$ </p>"+
@@ -40,63 +76,14 @@ habits.habits.forEach(habit => {
  "</div>";
 });
 </script>
-            <!-- <div class="image">
-                <img src="../assets/chaussure_dc.jpg" alt="">
-                <div class="description"> 
-                    <h1>DC-Shoes CRISIS-2</h1>
-                    <p>Cemelle skate, et très robuste<br/>75.90$</p>
-                </div>
-            </div>
-            <div class="image">
-                <img src="../assets/jean_skate.webp" alt="">
-                <div class="description">
-                    <h1>Baggy</h1>
-                    <p>Baggy style skate<br/>40$</p>
-                </div>
-            </div>
-            <div class="image">
-                <img src="../assets/bonnet_skate.jpg" alt="">
-                <div class="description">
-                    <h1>Titus</h1>
-                    <p>Bonnet Homme<br/>20$</p>
-                </div>
-            </div>
-            <div class="image">
-                <img src="../assets/chaussettes_vans.jpg" alt="">
-                <div class="description">
-                    <h1>Vans</h1>
-                    <p>Chaussettes Vans<br>15$</p>
-                </div>
-            </div>
-                <div class="image">
-                <img src="../assets/t-shirt_skate.webp" alt="">
-                <div class="description">
-                    <h1>Magenta</h1>
-                    <p>T-shirt Magenta<br>15$</p>
-                </div>
-            </div>
-                <div class="image">
-                <img src="../assets/pull.jpg" alt="">
-                <div class="description">
-                    <h1>Thrasher</h1>
-                    <p>Pull Thrasher<br>45$</p>
-                </div>
-            </div>
-                <div class="image">
-                <img src="../assets/short.jpg" alt="">
-                <div class="description">
-                    <h1>Carart</h1>
-                    <p>Short Carart<br>35$</p>
-                </div>
-            </div>
-                <div class="image">
-                <img src="../assets/ceinture.jpg" alt="">
-                <div class="description">
-                    <h1>Independent</h1>
-                    <p>Ceinture Independent<br>26$</p>
-                </div>
-            </div> -->
-       
+    
     </section>
 </body>
 </html>
+
+
+
+
+
+
+

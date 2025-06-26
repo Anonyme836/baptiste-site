@@ -42,7 +42,7 @@ section {
 
 
 .destinations .gallerie .image img {
-    object-fit: cover;
+    object-fit: contain;
     height: 100%;
     width: 102%;
     border-radius: 1rem;
